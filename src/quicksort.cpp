@@ -32,6 +32,10 @@ int main() {
   // sort v1 using sequential algorithm
   quicksort(v1, 0, v1.size()-1);
 
+  for (int &i : v1) {
+	  std::cout << i << std::endl;
+  }
+
   // sort v2 using parallel algorithm
   parallel_quicksort(v2, 0, v2.size()-1);
 
